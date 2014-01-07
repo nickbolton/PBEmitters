@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 #endif
   EOS
   s.ios.frameworks    = 'Cocoa'
-  s.ios.dependency 'PBFoundation', :podspec => 'https://raw.github.com/nickbolton/PBFoundation/emitters-breakout/PBFoundation.podspec'
+  s.ios.dependency 'PBFoundation', :git => 'https://github.com/nickbolton/PBFoundation.git', :branch=>'emitters-breakout'
   s.license   = {
     :type => 'MIT',
     :text => <<-LICENSE

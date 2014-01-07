@@ -16,8 +16,8 @@ Pod::Spec.new do |s|
 #import "PBEmitters.h"
 #endif
   EOS
-  s.ios.frameworks    = 'Cocoa'
   s.ios.dependency 'PBFoundation', '~> 0.1'
+  s.ios.frameworks    = 'Cocoa', 'PBFoundation'
   s.license   = {
     :type => 'MIT',
     :text => <<-LICENSE

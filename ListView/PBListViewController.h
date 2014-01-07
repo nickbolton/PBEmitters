@@ -10,6 +10,7 @@
 
 @class TCTimePeriodSelectorView;
 @class PBListItem;
+@class PBActionDelegate;
 
 extern NSString * const kPBListCellID;
 extern NSString * const kPBListSpacerCellID;
@@ -23,7 +24,7 @@ extern NSString * const kPBListActionCellID;
 @property (nonatomic, strong) PBActionDelegate *actionDelegate;
 @property (nonatomic) BOOL initialized;
 @property (nonatomic, getter = isModal) BOOL modal;
-@property (nonatomic) id doneTarget;
+@property (nonatomic, assign) id doneTarget;
 @property (nonatomic) SEL doneSelector;
 @property (nonatomic) BOOL dismissOnDone;
 @property (nonatomic, strong) UIColor *titleColor;

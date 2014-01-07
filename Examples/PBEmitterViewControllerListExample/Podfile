@@ -1,0 +1,13 @@
+platform :ios, '7.0'
+
+pod 'PBFoundation', :podspec => 'https://raw.github.com/nickbolton/PBFoundation/emitters-breakout/PBFoundation.podspec'
+
+inhibit_all_warnings!
+
+post_install do |installer_representation|
+  installer_representation.project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['CODE_SIGN_IDENTITY'] = 'iPhone Developer'
+    end
+  end
+end

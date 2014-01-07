@@ -1,0 +1,15 @@
+PODS:
+  - PBFoundation (0.1.0):
+    - PBFoundation/no-arc
+
+DEPENDENCIES:
+  - PBFoundation (from `https://raw.github.com/nickbolton/PBFoundation/emitters-breakout/PBFoundation.podspec`)
+
+EXTERNAL SOURCES:
+  PBFoundation:
+    :podspec: https://raw.github.com/nickbolton/PBFoundation/emitters-breakout/PBFoundation.podspec
+
+SPEC CHECKSUMS:
+  PBFoundation: 89caf0e18657f45c61d018c7869fc8025f7acb41
+
+COCOAPODS: 0.27.1

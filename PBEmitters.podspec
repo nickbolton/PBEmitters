@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 #endif
   EOS
   s.ios.dependency 'PBFoundation', '~> 0.1'
-  s.ios.frameworks    = 'Cocoa', 'PBFoundation'
+  s.ios.frameworks    = 'UIKit', 'PBFoundation'
   s.license   = {
     :type => 'MIT',
     :text => <<-LICENSE

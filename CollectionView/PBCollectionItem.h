@@ -17,10 +17,10 @@
 @property (nonatomic, strong) UIImage *selectedBackgroundImage;
 @property (nonatomic, strong) UIImage *hightlightedBackgroundImage;
 @property (nonatomic, strong) UIImage *highlightedSelectedBackgroundImage;
-@property (nonatomic) NSString *reuseIdentifier;
-@property (nonatomic) UINib *cellNib;
+@property (nonatomic, strong) NSString *reuseIdentifier;
+@property (nonatomic, strong) UINib *cellNib;
 @property (nonatomic,  strong) NSString *kind;
-@property (nonatomic) id userContext;
+@property (nonatomic, strong) id userContext;
 @property (nonatomic, strong) NSIndexPath *indexPath;
 @property (nonatomic) UICollectionViewScrollPosition scrollPosition;
 @property (nonatomic, getter = isSelected) BOOL selected;

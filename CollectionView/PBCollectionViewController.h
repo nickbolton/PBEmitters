@@ -20,7 +20,7 @@ extern NSString * const kPBCollectionViewDecorationKind;
 @property (nonatomic, readonly) NSArray *dataSource;
 @property (nonatomic) BOOL reloadDataOnViewLoad;
 @property (nonatomic) BOOL hasCancelNavigationBarItem;
-@property (nonatomic) id doneTarget;
+@property (nonatomic, weak) id doneTarget;
 @property (nonatomic) SEL doneSelector;
 @property (nonatomic) BOOL dismissOnDone;
 @property (nonatomic, getter = isSectioned, readonly) BOOL sectioned;

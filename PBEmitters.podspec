@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.resources = 'ListView/PBListCell.xib', 'ListView/PBTitleCell.xib'
 
   s.ios.dependency 'PBFoundation', '~> 0.1'
-  s.ios.frameworks    = 'UIKit', 'PBFoundation'
+  s.ios.frameworks = 'UIKit'
 
   s.prefix_header_contents = <<-EOS
 #ifdef __OBJC__

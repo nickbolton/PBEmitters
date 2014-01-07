@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.source_files  = '*.{h,m}', 'CollectionView/**/*.{h,m}', 'ListView/**/*.{h,m}'
   s.resources = 'ListView/PBListCell.xib', 'ListView/PBTitleCell.xib'
 
-  s.dependency 'PBFoundation', '~> 0.1'
+  s.dependency 'PBFoundation', '0.1.0'
   s.frameworks = 'UIKit'
   s.prefix_header_contents = <<-EOS
 #ifdef __OBJC__

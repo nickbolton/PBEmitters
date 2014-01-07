@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.source_files  = '*.{h,m}', 'CollectionView/**/*.{h,m}', 'ListView/**/*.{h,m}'
   s.resources = 'ListView/PBListCell.xib', 'ListView/PBTitleCell.xib'
 
-  s.ios.dependency 'PBFoundation', { :git => 'https://github.com/nickbolton/PBFoundation.git', :branch => 'emitters-breakout' }
+  s.ios.dependency 'PBFoundation', :git => 'https://github.com/nickbolton/PBFoundation.git', :branch => 'emitters-breakout'
   s.ios.frameworks = 'UIKit'
 
   s.prefix_header_contents = <<-EOS

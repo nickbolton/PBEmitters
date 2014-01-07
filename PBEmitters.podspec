@@ -13,9 +13,8 @@ Pod::Spec.new do |s|
   s.source_files  = '*.{h,m}', 'CollectionView/**/*.{h,m}', 'ListView/**/*.{h,m}'
   s.resources = 'ListView/PBListCell.xib', 'ListView/PBTitleCell.xib'
 
-  s.dependency 'PBFoundation', :git => 'https://github.com/nickbolton/PBFoundation.git', :branch => 'emitters-breakout'
+  s.dependency 'PBFoundation', :podspec => 'https://raw.github.com/nickbolton/PBFoundation/emitters-breakout/PBFoundation.podspec'
   s.frameworks = 'UIKit'
-
   s.prefix_header_contents = <<-EOS
 #ifdef __OBJC__
 #import "PBEmitters.h"

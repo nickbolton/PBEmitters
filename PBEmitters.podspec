@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name      = 'PBEmitters'
-  s.version   = '0.0.1'
+  s.version   = '0.0.2'
   s.ios.deployment_target = '7.0'
   s.summary   = 'PBEmitters is a different approach to using iOS table and collection views.'
   s.homepage  = 'https://github.com/nickbolton/PBEmitters'
@@ -16,7 +16,8 @@ Pod::Spec.new do |s|
 #import "PBEmitters.h"
 #endif
   EOS
-  s.osx.frameworks    = 'Cocoa'
+  s.ios.frameworks    = 'Cocoa'
+  s.ios.dependency 'PBFoundation', :podspec => 'https://raw.github.com/nickbolton/PBFoundation/emitters-breakout/PBFoundation.podspec'
   s.license   = {
     :type => 'MIT',
     :text => <<-LICENSE
